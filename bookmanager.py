@@ -35,7 +35,7 @@ def home():
             print("Failed to add book")
             print(e)
     books = Book.query.all()
-    return render_template("home.html", books=books)
+    return render_template("index.html", books=books)
 
 
 @app.route("/update", methods=["POST"])
